@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="فن النحت و الديكورات الحديثة " />
+        <meta name="author" content="عزام فهد منصور" />
+        <meta name="keywords" content="النحت, الديكور,نحت مجسمات,دورات تدريبة,الديكورات الحديثة,فكر في التصميم,افكار ديكورات جميلة ,عالم الديكورات " />
+        <title>فن النحت و الديكورات الحديثة</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.azamahd.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+  <style>
+
+
+  /* الصفحات */
+  .page {
+    display: none; /* إخفاء جميع الصفحات افتراضيًا */
+    height: 60%;
+    padding: 20px;
+  }
+
+  /* الصفحة النشطة */
+  .active {
+    display: block; /* تظهر الصفحة النشطة فقط */
+  }
+
+  /* تصميم الصفحة الأولى */
+  #page1 {
+    background-color: #c7ccd1; /* خلفية بيضاء */
+    color: #000; /* نص باللون الأسود */
+  }
+
+  /* تصميم الصفحة الثانية */
+  #page2 {
+    background-color: #c7ccd1; /* خلفية بيضاء  */
+    color: #000; /* نص باللون الأسود */
+    font-family: Arial, sans-serif;
+  }
+
+  /* تصميم الصفحة الثالثة */
+  #page3 {
+    background-color: #8d99ae; /* خلفية رمادية */
+    color: #2b2d42; /* نص باللون الداكن */
+    font-style: italic;
+  }
+
+  /* تصميم الأزرار */
+  .nav-btn {
+    cursor: pointer;
+    padding: 20px 15px;
+    margin: 5px;
+    background-color: blue;
+    color: white;
+    border:none;
+    border-radius: 5px;
+  }
+
+  .nav-btn:hover {
+    background-color: #555;
+  }
+
+
+
+
+
+
+        img.zoomed {
+            transform:scale(2); /* حجم التكبير (يمكنك تغييره إلى الحجم المطلوب) */
+            box-shadow: 0 30px 20px rgba(0, 0, 0, 0.5); /* ظل أكثر وضوحًا */
+ 
+
+
+
+
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: red;
+            padding: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: tomato;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            color: #000;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .links-section {
+            margin: 20px;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .links-section h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .links-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .links-section li {
+            margin: 10px 0;
+        }
+
+        .links-section a {
+            color: darkorange;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .links-section a:hover {
+            color: red;
+            transform: scale(1.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: linear-gradient(135deg, #ffeb3b, #ff9800);
+            color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 1.1em;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgba(255, 215, 135, 0.9);
+        }
+
+        tr:hover {
+            background-color: rgba(255, 138, 101, 0.9);
+            transform: scale(1.02);
+            transition: all 0.3s;
+        }
+
+        td {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        td:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+ 
+
+
+   
+    </style>
+ 
+    <body  id="page-top"   >
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Clarence Taylor</span> 
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg"  alt="..." /></span>
+            </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+ <details><summary><big> <font face="impact" size="6" color=yellow> شريط التنقل </font> </big></summary>  <ul class="navbar-nav">
+                 <p>   <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">الصفحة الرىسية</a></li> </p>
+                    <p> <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"> قسم النحت </a></li> </p>
+                    <p> <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">قسم الديكور</a></li> </p>
+                   <p>  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">صور توضيحية للاعمال النحت</a></li> </p>
+                    <p> <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">صور توضيحية للاعمال الديكور </a></li> </p>
+                   <p>  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">الخلاصة</a></li></p>
+                    <p>   <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#links">روابط مفيدة لفن النحت والديكورات</a></li> </p>
+                </ul>
+            </div>
+        </nav>
+   </details>
+    <center> <h2>(in the name of allah)</h2></center>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content"> 
+ 
+        
+
+  
+        
+    <marquee BGCOLOR="#FFff00" HSPACE="40"     DIRECTION="right"    HEIGHT="80"  SCROLLAMOUNT="10"  ALIGN="middle"  >  <h2> <font color = red>مرحبا بكم في فن النحت والديكورات الحديثة</font></h2></marquee>
+
+          
+                <center>    <h2 class="mb-0"> (  فن النحت و  <span class="text-primary">   الديكورات)</span> </h2></center>
+                <br>
+                   
+                    <p class="lead mb-5"></p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/فهد منصور" target="_blank">
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+                    </div>
+                </div>
+            </section>
+ 
+
+
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">قسم النحت الحديث</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                       
+                            <div class="subheading mb-3">مقدمة فن النحت</div>
+                          <u>  <p> النحت على الخشب(بالواحBDF) والذي يتم تنفيذة بمكينة ال CNCهوفن بحد ذاته يجمع بين الرسم ومهارة النحت، لذالك حاولت ان اخرجة من طريقه المعهود، نحت الايات القرآنية، والنقشات، الى الرسم التشكيلي، كنحت المناظر الطبيعية وكذالك الحيوانية، ليصل الى نحت الصور البشرية بدقة عالية، وذالك باستخدام المنشار اليدوي، دون الحاجة الى الادوات الكهربائية. </p></u>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2024 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">انواع النحت</h3>
+
+        <table border="5"cellpadding="7"width="80%" height="250">
+      
+            <tr>
+              <th title="رقم تسلسلي">الرقم</th>
+                <th title=" نوع النحت">نوع فن النحت الحديث</th>
+                <th title="المواد المستخدمة">المادة المستخدمة</th>
+                <th title="الناتج النهائي">الشكل النهائي</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>نحت مجسمات جبسية</td>
+                <td>جبس+اسلاك+شاش</td>
+                <td>تماثيل ومجسمات واقعية</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>نحت  مجسمات المكتبية</td>
+                   <td>منشار وغراء وصنفرة خشب ابو9وعدة طبقات من ابو6</td>
+                <td>تماثيل و نحت تجريد معبر</td>
+            </tr>
+              <tr>
+                <td>3</td>
+                <td>نحت على الخشب بطريق مشابة للرسم</td>
+                <td>خشب ابو 3 و قماش قطيفة كاخلفية</td>
+                <td>نحت تشكيلي معبر و صور لاشخاص</td>
+            </tr>
+             <tr>
+                <td>4</td>
+                <td>نحت مجسمات جدارية</td>
+                <td>جص وسكين خاص بالنحت</td>
+                <td>نحت مجسمات و تشكلية على الجدران </td>
+            </tr>
+        </table>  
+         
+  
+
+                            <div class="subheading mb-3">الفكرة الجديدة  للنحت و المشاركت التي قيمت في المعارض</div>
+                            <p> النحت على الخشب(بالواحBDF) والذي يتم تنفيذة بمكينة ال CNCهو فن بحد ذاته يجمع بين الرسم ومهارة النحت، لذالك حاولت ان اخرجة من طريقه المعهود، نحت الايات القرآنية، والنقشات، الى الرسم التشكيلي، كنحت المناظر الطبيعية وكذالك الحيوانية، ليصل الى نحت الصور البشرية بدقة عالية، وذالك باستخدام المنشار اليدوي، دون الحاجة الى الادوات الكهربائية. </p>
+                      
+    <!-- الحاوية الرئيسية التي تحتوي على الفيديو -->
+    <div class="video-container">
+        <!-- عنوان الحاوية -->
+        <h1>فيديو يوضح مشاركة اعمال النحت في معرض ظفر غي عمان</h1>
+        
+        <!-- وسم الفيديو مع خاصية التحكم -->
+        <video class="custom-video" controls>
+            <!-- مصدر الفيديو وتنسيقه -->
+            <source src="imag/oman2.mp4" type="video/mp4">
+            <!-- نص بديل يظهر إذا كان المتصفح لا يدعم تشغيل الفيديو -->
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+
+
+                             </div>
+                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                           
+                        </div>
+                      
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                           
+                        </div>
+                      
+                    </div>
+                </div>
+            </section>
+  
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">قسم الديكور</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3>مقدمة لفن الديكور و التصاميم</h3>
+                                
+                            <div>فن الديكور هو أحد الفنون الإبداعية التي تجمع بين الجمال والوظيفة لتشكيل بيئات مريحة وجذابة تلبي احتياجات الإنسان العصرية. في عصرنا الحديث، أصبحت الديكورات أكثر من مجرد تزيين للمساحات، بل هي انعكاس لشخصيات الأفراد وأسلوب حياتهم، حيث تدمج بين التصاميم الأنيقة والخامات المبتكرة والتكنولوجيا الذكية.
+الديكورات الحديثة تميزت باستخدام الألوان الهادئة والتفاصيل البسيطة التي تمنح الشعور بالراحة، مع الاعتماد على الإضاءة المدروسة لتعزيز جمالية المكان. كما تبرز الاتجاهات المميزة مثل التصاميم المستدامة، استخدام المواد الطبيعية، والتوازن بين العناصر التقليدية والمعاصرة.
+سواء كانت المساحات صغيرة أو كبيرة، يهدف فن الديكور الحديث إلى استغلال كل زاوية بشكل إبداعي، ليعبر عن شخصية أصحاب المكان ويخلق بيئة متكاملة تمتاز بالأناقة والانسجام   فن الديكور أو العمارة الداخلية هي فن تزيين الفراغ الداخلي كالغرفة بحيث تكون جذابة وسهلة الاستخدام وتتوافق مع الهندسة المعمارية. هدف التزيين الداخلي هو توفير بعض "الإحساس" للفراغ. ويشمل تطبيق طلاء الجدران، ورق الجدران
+، وغيرها من الأرضيات والأسقف واختيار الأثاث والتجهيزات مثل المصابيح، وتوفير حيز حركي مناسب كما تخصيص الفراغات والمساحات كإضافة اللوحات والمنحوتات والسجاد. وغالبا هذه الدراسات تم ضمن العمارة الداخلية. على الرغم من الشروط الداخلية والديكور والتصاميم الداخلية أحيانا تستخدم بالتبادل بين المهندس والمالك لاختيار وعرض البنود الداخلية داخل الفرع مثل الأثاث والزخارف وملحقاتها وغرفة التصميم. والتصاميم الداخلية من جهة أخرى ينطوي التنسيق وابداع الاشكال الجميلة على التلاعب المعماري الداخلي في الفراغ.
+وتعد الزخرفة فن من فنون الديكور وتنسيق وتزين الفراغات ويهدف الي تجميل وتنسيق الفراغات المختلفة كالحجرات والمكاتب الإدارية وغيرها باستخدام العديد من الخامات لتحقيق أفضل استفادة لمفردات هذا الفراغ وتوظيفها بشكل جمالي يلائم المستخدم. بتعامل المزخرف او مصمم الديكور مع العديد من الخامات الطبيعية والصناعية مثل ورق الحائط والدهانات والاثاث والزجاج والمعادن والاقمشة ويخلط ما بينها ليصل في النهاية الي نتيجة مرضية. 
+فن الزخرفة الداخلية (الديكور) هو أحد الأساليب الإبداعية التي ظهرت في فترة ليست ببعيدة وانتشرت في جميع انحاء العالم لتجسيد لحظة نادرة في تاريخ الأثاث.
+فهذا الفن ليس له قواعد فنية ولا مؤسسية ولا فلسفية فحريفو هذه المهنة لا يفكرون في وضع منهجا للحياة.
+فهم ليسوا الا مهندسين ومعمارين وصناع زجاج ومصممي ديكورات.
+هناك اختلاف ما بين كلمة المزخرف الداخلي والمصمم الداخلي.
+ فالمزخرف الداخلي يركز على اللمسات الأخيرة للحوائط والدهانات والنوافذ والاثاث.
+والمصمم الداخلي مسؤول عن معالجة التكامل المعماري والفراغ الداخلي مع خلق الطريقة الملائمة لمعيشة الفرد من خلال دراسة سلوكيات الانسان.</div>
+                            <p>GPA: 3.23</p><br>
+<ol>
+<h4> قبل بداية التنفيذ او التطبيق العملي للديكور لابد من </h4>
+<p><li>التعرف على المواد المستخدمة تنفيذ السقوف الصناعية، وكذالك النحت بالجبس، او الجص، او الخشب 
+<li>دراسة بل وتطبيق الجانب النظري، المتمثل في، الرسم الهندسي. 
+<li>عمل زيارات ميدانية جماعية، لمحلات بيع مواد الديكور، وكذالك لمواقع نفذة مسبقا، 
+<li>التعرف على اسعار مواد الديكور وكيفية التعامل معها. 
+<li>يعرف المدرب مالغاية  من تعلم الديكور، وكذالك مكاسب العمل في هذا القطاع،، بل والحرص على اتقانه وعدم اهدار موادة، لارتفاع اسعارها. 
+</p></ol>
+<h4>نماذج للرسم الهندسي: </h4>
+
+1
+       <img src="imag/draw1.jpg" height="20%" width="20%" align="top"  alt="نحت حديث 1"> 
+1
+            <img src="imag/draw2.jpg" hight="15%" width="20%" align="top"  alt="نحت حديث 2"> 
+2
+              <img src="imag/draw3.jpg" hight="15%" width="20%" align="top"  alt="نحت حديث 3"> 
+3
+               <img src="imag/draw4.jpg" hight="15%" width="20%" align="top"  alt="نحت حديث 3"> 
+
+
+
+   
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                    </div>
+ <h3 class="mb-0">انواع الديكورات</h3>
+  
+        <table border="5" cellpadding="7"width="80%" height="250" border="5" >
+          
+       </div>
+    <script src="az.png"></script>
+ <tr>
+  
+                <th title="رقم تسلسلي">الرقم</th>
+                <th title="نوع الديكور">نوع الفن</th>
+                <th title="المواد المستخدمة">المادة المستخدمة</th>
+                <th title="الناتج النهائي">الشكل النهائي</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>الديكور الحديث</td>
+                <td>مواد مختلفة</td>
+                <td>تصاميم معاصرة</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>الديكور التقليدي</td>
+                <td>خشب وحجر</td>
+                <td>تصاميم كلاسيكية</td>
+            </tr>
+        </table>
+<br>
+
+   <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                          <center>  <h4 class="mb-0" >التطبيقات العملي للديكور في المؤاسسات الحكومية و النزول الميداني</h4></center>
+<br>
+                          <p>تم النزول الميداني إلى مدرسة الكويت مديرية/صالة وبالتحديد إلى (صالة الاجتماعات) في المدرسة بتاريخ 25/10/2023 والتي تم فيها تطبيق (عملي ديكور) الدفعة7 التابعة لمؤسسة معكم والتي تم الانتهاء من عملها في 2023/8/25م تقريبا. 
+  وتم النزول الميداني إلى معهد احتراف والذي يقوم بتدريب الطلاب ديكور عملي الدفعة 2 في (صالة الاجتماعات) بمدرسة ناصر مديرية القاهرة والتي بدأت من تاريخ2023/8/28م ومازالت مستمرة...
+ومن خلال النزول الميداني تم عمل مقابلة مع المهندس: فهد عبد عبد الله منصور:
+وخلال المقابلة تحدث المهندس: فهد عبد عبد الله منصور: عن الدعم الذي منحه كلا من الشيخ: حمود سعيد المخلافي ممثلا بمعهد احتراف والدكتور: عبد الحميد اليوسفي ممثلا بمؤسسة معكم، في الدعم المادي لا نجاح هذه الاعمال والتي لا تجدها في جامعات ومعاهد حكومية، او خاصة كبرنامج وتطبيق عملي ديكور.
+كما تحدثنا معه عن عدد المتدربين والذي أفاد انه لا يسمح إلا بعشرين متدرب على أساس تقسيمهم على دفعتين، كل عشرة ثلاث ايام؛ حتى يتمكن كل متدرب من التطبيق الفعلي؛ كما هو مبين في حافظة الدوام للمتدربين. 
+</p>
+</div>
+        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+    </section>
+
+                  
+                            
+            <a href="imag/paragram.docx" download><font color = blue><u>انقر هنا لفتح البحث النظر و العملي ديكور</u></font></a>
+                        </div>
+                       
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+ <h3>صور توضيحية لانواع اعمال النحت الحديثة</h3> 
+  <button class="nav-btn" data-target="page1">صور توضيحية لانواع اعمال النحت الحديثة</button>
+ <div id="page1" class="page">
+                                         
+                                       
+       <section id="photo" color = "blue" >    <h3>صور توضيحية لانواع اعمال النحت الحديثة</h3> 
+        <div>
+      <section id="photo">  <font color = "blue"><p> <big> صور تطبيق نحت مجسمات جبسية <big> </p> </font> <br/>
+
+             <img src="imag/ccc.png" hight="20%" width="20%" align="top"  alt="نحت حديث 1"> 
+            <img src="imag/ddd.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 2"> 
+            <img src="imag/hhh.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+            <img src="imag/arn.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+                 <img src="imag/fw.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+             <img src="imag2/cust.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+            <img src="imag2/gbs.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+
+         
+            <section>     <font color = "blue"><p><big> نحت مجسمات مكتبية</big></p> </font><br/></section>
+
+                 <img src="imag/fff.jpg" hight="10%" width="20%" align="top"  alt="نحت حديث 1"> 
+            <img src="imag/ggg.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 2"> 
+              <img src="imag/eee.jpg" hight="40%" width="20%" align="top"  alt="نحت حديث 3"> 
+               <img src="imag/nnn.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3"> 
+                <img src="imag/sabr.jpg" hight="20%" width="25%" align="top"  alt="نحت حديث 3"> 
+                  <img src="imag/hd.jpg" hight="20%" width="25%" align="top"  alt="نحت حديث 3">
+                <img src="imag/hor.jpg" height="20%" width="30%" align="top"  alt="نحت حديث 3"> 
+                 <img src="imag/om.jpg" height="20%" width="30%" align="top"  alt="نحت حديث 3"> 
+               <img src="imag2/hodyfa.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+              <img src="imag2/hza.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+            <img src="imag2/hash.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+            <img src="imag2/fal.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+          <img src="imag2/sabr.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+               <img src="imag2/mgasm.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+
+         
+         <section>  <font color = "blue"><p> <big> صور تطبيق نحت على الخشب بطريق مشابة للرسم</big></p> </font><br/></section>
+                                         
+             <img src="imag/az.png" hight="20%" width="20%" align="top"  alt="نحت حديث 1"> 
+            <img src="imag/www.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 2"> 
+            <img src="imag/kkk.png" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+            <img src="imag/ahmad.jpg" hight="25%" width="25%" align="top"  alt="نحت حديث 3">
+             <img src="imag/sab.jpg" hight="25%" width="25%" align="top"  alt="نحت حديث 3">
+            <img src="imag/oman.jpg" hight="25%" width="25%" align="top"  alt="نحت حديث 3">
+            <img src="imag/yas.jpg" hight="25%" width="25%" align="top"  alt="نحت حديث 3">
+             <img src="imag/yem.jpg" hight="25%" width="25%" align="top"  alt="نحت حديث 3">
+             <img src="imag/mang.jpg" hight="25%" width="25%" align="top"  alt="نحت حديث 3">
+            <img src="imag/azra.jpg" hight="25%" width="25%" align="top"  alt="نحت حديث 3">
+             <img src="imag/hag.png" hight="25%" width="25%" align="top"  alt="نحت حديث 3">
+            <img src="imag2/azbiry.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+           <img src="imag2/atho.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+           <img src="imag2/alhmady.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+           <img src="imag2/eelam.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+           <img src="imag2/twakl.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+
+          
+     <section  >     <font color = "blue"><p> <big>صور نحت جدارية وتشكيلية</big></p> </font><br/></section>
+                                         
+             <img src="imag2/wall.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 1"> 
+            <img src="imag2/wall2.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 2"> 
+            <img src="imag2/wall3.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+             <img src="imag2/wall4.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+           <img src="imag2/wall5.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+           <img src="imag2/wall6.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+           <img src="imag2/wall7.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+           <img src="imag2/mabr.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+            <img src="imag2/mabr2.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+            <img src="imag2/mabr3.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+            <img src="imag2/aih.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+             <img src="imag2/aih2.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+           <img src="imag2/aih3.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3">
+
+   <div>
+  
+           </section>
+
+ </div>
+</ol>
+</div>
+
+ <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+
+ 
+          <h3> صور توضيحية لانواع اعمال الديكورات التي تم تطبيق فيها</h3> 
+        <button class="nav-btn" data-target="page2">صور توضيحية لانواع اعمال الديكور الحديثة</button>
+ <div id="page2" class="page">
+
+     <section id="photo">    <h3>صور تم تطبيقها في مؤاسسات حكومية</h3>  </section>
+       <h4>صور توضيحية لتدريب طلاب تابع لمعهد احتراف في مؤاسسات حكومية</h4>
+   <ol>    
+        
+<li><P>تم التطبيق في مدرسة الكويت</P>
+              <img src="imag/dicor.jpg" align="middle" height="40%" width="40%" align="top"  alt="نحت حديث 1"> 
+<li><P>تم التطبيق في مدرسة الثورة للبنات </P>
+        <img src="imag/school.jpg" align="middle" height="25%" width="20%" align="top"  alt="نحت حديث 2"> 
+   
+    <!-- الحاوية الرئيسية التي تحتوي على الفيديو -->
+    <div class="video-container">
+        <!-- عنوان الحاوية -->
+       
+        <h1> فيديو الشكل النهاىي لمدرسة الثورة</h1>
+            
+        
+        <!-- وسم الفيديو مع خاصية التحكم -->
+        <video class="custom-video" controls>
+            <!-- مصدر الفيديو وتنسيقه -->
+            <source src="imag/video.mp4" type="video/mp4">
+            <!-- نص بديل يظهر إذا كان المتصفح لا يدعم تشغيل الفيديو -->
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+
+
+        
+<li><P>تم التطبيق في مدرسة ناصر </P>
+
+            <img src="imag/school2.jpg" align="middle" height="20%" width="20%" align="top"  alt="نحت حديث 3">
+</ol>
+<h5>نماذج للزيارات الميدانية تابعة لمعهد احتراف:</h5>
+<img src="imag/picture1.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3"> 
+<img src="imag/picture2.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 3"> 
+
+     <h5> تنفيذ عدة محلات من خلال تطبيق مخططات بحسب الطلب</h5>
+<br>
+                 <img src="imag/shop1.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 1"> 
+            <img src="imag/shop2.jpg" hight="20%" width="20%" align="top"  alt="نحت حديث 2"> 
+              <img src="imag/shop3.jpg" hight="20%" width="30%" align="top"  alt="نحت حديث 3"> 
+               <img src="imag/shop4.jpg" hight="20%" width="30%" align="top"  alt="نحت حديث 3"> 
+                <img src="imag/dek.jpg" hight="20%" width="30%" align="top"  alt="نحت حديث 3"> 
+              <img src="imag/flot.jpg" height="40%" width="20%" align="top"  alt="نحت حديث 1"> 
+                                       
+             
+            <img src="imag/shop6.jpg" height="20%" width="30%" align="top"  alt="نحت حديث 2"> 
+             <img src="imag/shop5.jpg" height="40%" width="30%" align="top"  alt="نحت حديث 1"> 
+            <img src="imag/deecor.jpg" height="40%" width="20%" align="top"  alt="نحت حديث 1"> 
+
+  <script>
+        // إضافة حدث عند الضغط على الصور
+        const images = document.querySelectorAll('img');
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                image.classList.toggle('zoomed'); // إضافة/إزالة فئة التكبير
+            });
+        });
+
+    </script>
+                  </div>
+ </div>         
+           
+            </section>
+  
+                        <hr class="m-0" />
+ 
+            <!-- Interests-->
+
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+   
+
+
+                    <h2 class="mb-5">الخلاصة</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Google Analytics Certified Developer
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Mobile Web Specialist - Google Certification
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            2
+                            <sup>nd</sup>
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - James Buchanan High School - Hackathon 2006
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3
+                            <sup>rd</sup>
+                            Place - James Buchanan High School - Hackathon 2005
+                        </li>
+                    </ul>
+    </section>
+
+              
+  <section class="resume-section" id="links">
+                <div class="resume-section-content">
+
+<section id="resources" class="links-section">
+
+
+        <h3>روابط مفيدة لفن النحت والديكورات</h3>
+        <ul>
+            <li><a href="https://www.archdaily.com" target="_blank">ArchDaily - ديكورات معمارية</a></li>
+            <li><a href="https://www.artstation.com" target="_blank">ArtStation - فنون النحت والرسم</a></li>
+            <li><a href="https://www.houzz.com" target="_blank">Houzz - تصاميم وديكورات منزلية</a></li>
+            <li><a href="https://www.behance.net" target="_blank">Behance - إلهام للفن والديكور</a></li>
+        </ul>
+  
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+          
+  </section>  
+</br>
+ 
+
+
+<footer>
+
+<h6 ><big>للتواصل معنا اتصل على الرقم 776245622</big></h6>
+  <a href="https://web.facebook.com/"azamfahd25@gmail.com" target="_blank"><big>تابعنا على الفيسبوك</big></a>
+ <p>البريد الاكتورني: <a href="mailto:azamfahd25@gmail.com">gmail </a></p>
+      <p>&copy; 2024 جميع الحقوق محفوظة</p>
+       
+    </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navButtons = document.querySelectorAll('.nav-btn'); // الأزرار
+
+    navButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        const targetPageId = this.getAttribute('data-target'); // الصفحة الهدف
+        const targetPage = document.getElementById(targetPageId);
+
+        // تبديل الحالة بين إظهار وإخفاء
+        if (targetPage) {
+          targetPage.classList.toggle('active');
+        }
+      });
+    });
+  });
+</script>
+
+
+
+
+    </body>
+  </html>

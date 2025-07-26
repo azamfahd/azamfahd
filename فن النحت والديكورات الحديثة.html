@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8"> <!-- تعيين الترميز إلى UTF-8 لدعم النصوص العربية -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- جعل التصميم متجاوبًا مع جميع الأجهزة -->
+    <title>مرحبا بكم في فن النحت والديكورات الحديثة</title>
+    <style>
+        /* تخصيص الأنماط العامة للجسم */
+        body {
+            font-family: Arial, sans-serif; /* نوع الخط */
+            margin: 0; /* إزالة الهامش الافتراضي */
+            padding: 0; /* إزالة الحشو الافتراضي */
+            background-image: url('imag/shop5.jpg'); /* تعيين صورة خلفية */
+            background-size: cover; /* ضبط الصورة لتغطي كامل الشاشة */
+            background-position: center; /* وضع الصورة في المركز */
+            display: flex; /* استخدام تصميم مرن */
+            justify-content: center; /* محاذاة العناصر أفقياً */
+            align-items: center; /* محاذاة العناصر عمودياً */
+            height: 100vh; /* جعل الارتفاع يغطي كامل الشاشة */
+            color: #bf0a0a; /* لون النص */
+            overflow: hidden; /* إخفاء أي تجاوز */
+        }
+
+        /* تصميم صندوق تسجيل الدخول */
+        .login-container {
+            background-color: rgba(62, 11, 11, 0.89); /* لون الخلفية مع شفافية */
+            padding: 50px; /* حشو داخلي */
+            border-radius: 15px; /* زوايا دائرية */
+            box-shadow: 0 10px 80px rgb(60, 255, 0); /* ظل للصندوق */
+            width: 100%; /* عرض كامل للصندوق */
+            max-width: 500px; /* الحد الأقصى للعرض */
+            text-align: center; /* محاذاة النصوص إلى المنتصف */
+            
+        }
+
+        /* تنسيق العنوان */
+        .login-container h1 {
+            font-size: 35px; /* حجم الخط */
+            margin-bottom: 30px; /* مسافة سفلية */
+            color: #f9d342; /* لون النص */
+        }
+
+        /* تصميم النموذج */
+        .login-container form {
+            display: flex; /* تصميم مرن */
+            flex-direction: column; /* ترتيب العناصر عموديًا */
+            gap: 15px; /* مسافة بين الحقول */
+        }
+
+        /* تصميم حقول الإدخال */
+        .login-container input {
+            padding: 12px; /* حشو داخلي */
+            font-size: 16px; /* حجم الخط */
+            border: none; /* إزالة الحدود */
+            border-radius: 8px; /* زوايا دائرية */
+            outline: none; /* إزالة الإطار عند التحديد */
+            color: #333; /* لون النص */
+        }
+
+        /* تصميم النصوص التلميحية */
+        .login-container input::placeholder {
+            color: #999; /* لون النص التلميحي */
+        }
+
+        /* تصميم الزر */
+        .login-container button {
+            padding: 12px; /* حشو داخلي */
+            font-size: 16px; /* حجم الخط */
+            background-color: #f9d342; /* لون الخلفية */
+            color: #333; /* لون النص */
+            border: none; /* إزالة الحدود */
+            border-radius: 8px; /* زوايا دائرية */
+            cursor: pointer; /* مؤشر الفأرة */
+            transition: transform 0.4s, background-color 0.4s; /* تأثيرات الانتقال */
+        }
+
+        /* تأثير عند تمرير الفأرة على الزر */
+        .login-container button:hover {
+            background-color: #fabb00; /* لون جديد */
+            transform: translateY(-5px); /* تأثير الحركة */
+        }
+
+        /* تصميم نص التذييل */
+        .login-container .footer {
+            margin-top: 15px; /* مسافة علوية */
+            font-size: 14px; /* حجم النص */
+            color: #ddd; /* لون النص */
+        }
+
+        /* تصميم رسالة الخطأ */
+        .error-message {
+            color: #fc030b; /* لون الخطأ */
+            font-size: 20px; /* حجم النص */
+            margin-top: -10px; /* تقليل المسافة العلوية */
+        }
+    </style>
+    <script>
+        // دالة للتحقق من صحة النموذج
+        function validateForm(event) {
+            event.preventDefault(); // منع الإرسال الافتراضي للنموذج
+            const usernameInput = document.getElementById('username'); // الحقل الخاص باسم المستخدم
+            const passwordInput = document.getElementById('password'); // الحقل الخاص بكلمة المرور
+            const errorMessage = document.getElementById('error-message'); // عنصر عرض رسالة الخطأ
+
+            // التحقق من أن اسم المستخدم يحتوي على أحرف فقط
+            const usernameRegex = /^[\u0621-\u064Aa-zA-Z\s]+$/; // يسمح بالأحرف العربية والإنجليزية والمسافات
+            if (!usernameRegex.test(usernameInput.value)) {
+                errorMessage.textContent = 'اسم المستخدم يجب أن يحتوي على أحرف فقط.'; // رسالة الخطأ
+                return; // إيقاف التحقق
+            }
+
+            // التحقق من كلمة المرور الافتراضية
+            if (passwordInput.value === '123456789') {
+                window.location.href = 'index.html'; // الانتقال إلى صفحة أخرى عند النجاح
+            } else {
+                errorMessage.textContent = 'كلمة المرور الافتراضية هي 123456789'; // رسالة الخطأ
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1>مرحباً بكم في فن النحت والديكورات الحديثة</h1>
+        <form onsubmit="validateForm(event)">
+            <input type="text" id="username" name="username" placeholder="اسم المستخدم" required> <!-- حقل اسم المستخدم -->
+            <input type="password" id="password" name="password" placeholder="كلمة المرور" required> <!-- حقل كلمة المرور -->
+            <div id="error-message" class="error-message"></div> <!-- رسالة الخطأ -->
+            <button type="submit">تسجيل الدخول</button> <!-- زر تسجيل الدخول -->
+        </form>
+        <div class="footer">© 2025 فن النحت والديكورات الحديثة</div> <!-- تذييل -->
+    </div>
+</body>
+</html>
